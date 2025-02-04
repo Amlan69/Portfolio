@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/ef0404d9a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo2.png" id= "logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Amlan Bag</span>
+                    <br> From Kharagpur.</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about------------>
+    <div id="About">
+        <div class="contener">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/IMG_.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>I am a web developer who loves building websites that are easy to use and look great. 
+                     I have experience with both front-end and back-end development, allowing me to create complete solutions. 
+                     I enjoy solving problems, learning new technologies, and delivering high-quality work that meets the needs of clients.
+                     My goal is to work on exciting projects and keep growing my skills.</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML&CSS</span><br>Designing wed interface.</li>
+                            <li><span>js</span><br>developers to manipulate the page's structure.</li>
+                            <li><Span>java</Span><br>basic for prgraming languag.</li>
+                            <li><span>Mern Stack</span><br> develop web applications.</li>
+                            <li><span>PL/SQL</span><br>for database.</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>10<sup>th</sup> from Kendriya Vidyalaya IIT Kharagpur.</li>
+                            <li><span>2021</span><br>12<sup>th</sup> from Sai +2 Higher Secondary.</li>
+                            <li><span>2024</span><br>MSME Tool Room.</li>
+                            <li><span>2025</span><br>B.Tech from swami vivekananda university.</li>
+                        </ul>
+                     </div>
+                     <div class="cv1"><a href="image/Amlan Bag Resume.pdf" download class="cv"> My Resume<i class="fa-solid fa-download"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------      services    -------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1><br>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i><br><br>
+                <h2>Web Design</h2><br>
+                <p>Custom website design and redesign.
+                Prototyping, wireframing, and graphic design.
+                Brand integration and collaboration with developers.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_design"target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i> <br><br>
+                <h2>web developer</h2><br>
+                <p>Custom website design and redesign.
+                Prototyping, wireframing, and graphic design.
+                Brand integration and collaboration with developers.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_development"target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i><br><br>
+                <h2>UI/UX Design</h2><br>
+                <p>Custom website design and redesign.
+                Prototyping, wireframing, and graphic design.
+                Brand integration and collaboration with developers.</p>
+                <a href="https://en.wikipedia.org/wiki/User_experience_design"target="_blank">Learn more</a>
+            </div>
+        </div>
+            <!---------portfolio---------->
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/work1.jpg"style="width: 475px; height: 555px;"alt=""><br><br>
+                        <div class="layer">
+                            <h3>Nodepad app</h3>
+                            <p>In tis website we can save all our node and it stors in locak storage.</p><br><br>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/work2.png" alt=""><br><br>
+                       <div class="layer">
+                            <h3>Nodepad app</h3>
+                            <p>In tis website we can save all our node and it stors in locak storage.</p><br><br>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                </div>
+            </div>
+            <a href="#"class="btn">see more</a>
+        </div>
+<!---------contact--------->
+<div id="contact">
+    <div class="contener">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>amlanbag222@gmail.com</p>
+                <P><i class="fa-solid fa-phone"></i> 7063893305</P>
+                <div class="social-icons">
+                    <a href="https://m.facebook.com/amlan.bag.35/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/a_mlanba_g/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/amlan-bag-a1306b22b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </div>
+</div>
+    <script src="style.js"></script>
+
+    <center>
+        <p>&copy 2025. Made by Amlan Bag.</p>
+    </center>
+</footer>
+</body>
+</html>
